@@ -3,6 +3,7 @@ import Introduction from "./Introduction";
 import Project from "./Project";
 import Footer from "./Footer";
 import projects from "../projects";
+import skills from "../skills";
 
 function App()
 {
