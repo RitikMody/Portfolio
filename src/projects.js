@@ -12,7 +12,7 @@ const projects=[
     {
         "title":"Youtube Comments Sentiment Analyser",
         "description":"It is a sentiment analyser for Youtube comments.",
-        "software":["Vader Algorithm"]
+        "software":["Selenium","Pandas"]
     }
 ];
 

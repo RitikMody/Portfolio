@@ -1,13 +1,19 @@
-import React from "react";
-import Landing from "./Landing";
+import React, { useState } from "react";
+import Introduction from "./Introduction";
+import Project from "./Project";
 import Footer from "./Footer";
-import projects from "projects";
+import projects from "../projects";
 
 function App()
 {
     return (<div>
 
-    <Landing/>
+    <Introduction/>
+
+    {projects.map((item,index)=>{
+        return <Project key={index} title={item.title} description={item.description} software={item.software}/>
+    })}
+    
     <Footer/>
 
     </div>);
