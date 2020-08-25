@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import Introduction from "./Introduction";
-import Project from "./Project";
+import Projects from "./Projects";
 import Footer from "./Footer";
-import projects from "../projects";
-import skills from "../skills";
+import Skills from "./Skills";
 
 function App()
 {
     return (<div>
 
     <Introduction/>
-
-    {projects.map((item,index)=>{
-        return <Project key={index} title={item.title} description={item.description} software={item.software}/>
-    })}
     
+    <Projects/>
+
+    <Skills/>
+
     <Footer/>
 
     </div>);
