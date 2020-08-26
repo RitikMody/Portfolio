@@ -6,8 +6,8 @@ function Project(props){
         <h2>{props.title}</h2>
         <p>{props.description}</p>
         <ul>
-        {props.software.map((item)=>{
-            return <li>{item}</li>;
+        {props.software.map((item,index)=>{
+            return <li key={index}>{item}</li>;
         })}
         </ul>
     </div>;
@@ -15,6 +15,7 @@ function Project(props){
 
 function Projects(){
     return <div className="projects">
+        <h1>Projects</h1>
         {projects.map((item,index)=>{
         return <Project key={index} title={item.title} description={item.description} software={item.software}/>
     })}

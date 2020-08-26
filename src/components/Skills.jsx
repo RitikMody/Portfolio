@@ -9,8 +9,9 @@ function Skill(props){
 
 function Skills(){
     return <div className="skills">
-        {skills.map((item)=>{
-            return <Skill name={item}/>;
+        <h1>Skills</h1>
+        {skills.map((item,index)=>{
+            return <Skill key={index} name={item}/>;
         })}
     </div>
 }

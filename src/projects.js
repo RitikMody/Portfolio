@@ -2,7 +2,7 @@ const projects=[
     {
         "title":"defeatCorona",
         "description":"It is a visualisation website for COVID-19.",
-        "software":["Flask,ChartJS,GeoPandas"]
+        "software":["Flask","ChartJS","GeoPandas"]
     },
     {
         "title":"Learn2Code",
