@@ -10,7 +10,7 @@ const projects=[
         "software":["PHP"]
     },
     {
-        "title":"Youtube Comments Sentiment Analyser",
+        "title":"Sentiment Analyser",
         "description":"It is a sentiment analyser for Youtube comments.",
         "software":["Selenium","Pandas"]
     }

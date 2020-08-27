@@ -1,5 +1,27 @@
-body{
+
+.intro{
+    height: 100vh;
+    text-align: center;
     background-color: #000;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     color:#fff;
+}
+.intro img{
+    height: 30em;
+    width: 24em;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    border-radius: 20px;
+}
+.intro-text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+.projects{
+    padding: 30px 100px;
+    background-color: #000;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+    color: #fff;
 }
