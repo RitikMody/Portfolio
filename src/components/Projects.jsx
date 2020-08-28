@@ -1,11 +1,14 @@
 import React from "react";
 import projects from "../projects";
+import {Row,Col,Card} from "react-bootstrap";
 import Chip from '@material-ui/core/Chip';
 
 function Project(props){
-    return <div className="project col-lg-4">
-        <h2>{props.title}</h2>
-        <p>{props.description}</p>
+    return <Col className="project" xs={1} md={4} lg={4}>
+        <Card>
+        <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.description}</Card.Text>
         {props.software.map((item,index)=>{
             return <Chip 
             key={index}
@@ -13,17 +16,20 @@ function Project(props){
             color="secondary"
             label={item}/>;
         })}
-    </div>;
+        </Card.Body>
+        </Card>
+    </Col>;
 }
 
 function Projects(){
     return <div className="projects">
         <h1>Projects</h1>
-        <div className="row">
+        
+        <Row>
         {projects.map((item,index)=>{
             return <Project key={index} title={item.title} description={item.description} software={item.software}/>
         })}
-        </div>
+        </Row>
         </div>;
 }
 

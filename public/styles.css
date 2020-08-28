@@ -1,4 +1,6 @@
-
+body{
+    margin: 0;
+}
 .intro{
     height: 100vh;
     text-align: center;
@@ -23,5 +25,5 @@
     padding: 30px 100px;
     background-color: #000;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
-    color: #fff;
+    /* color: #fff; */
 }

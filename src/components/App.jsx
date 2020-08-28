@@ -10,9 +10,9 @@ function App()
 
     <Introduction/>
     
-    <Projects/>
-
     <Skills/>
+
+    <Projects/>
 
     <Footer/>
 
