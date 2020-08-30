@@ -22,8 +22,18 @@ body{
     right: 50%;
 }
 .projects{
-    padding: 30px 100px;
+    padding: 30px 8%;
     background-color: #000;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
     /* color: #fff; */
+}
+.card{
+    height: 180px;
+}
+.software {
+    position: absolute;
+    bottom: 10px;
+}
+footer{
+    text-align: center;
 }

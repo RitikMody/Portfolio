@@ -4,20 +4,23 @@ import {Row,Col,Card} from "react-bootstrap";
 import Chip from '@material-ui/core/Chip';
 
 function Project(props){
-    return <Col className="project" xs={1} md={4} lg={4}>
+    return <Col className="project" sm={12} md={6} lg={4}>
         <Card>
         <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
+        <div className="software">
         {props.software.map((item,index)=>{
             return <Chip 
             key={index}
             variant="outlined"
-            color="secondary"
+            color="primary"
             label={item}/>;
         })}
+        </div>
         </Card.Body>
         </Card>
+        <br/>
     </Col>;
 }
 
